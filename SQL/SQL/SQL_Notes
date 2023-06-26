@@ -1,0 +1,152 @@
+1. What is Data
+2. Different Data Storage Devices
+3. Where does the DBMS and RDBMS Data get stored?
+4. Traditional Databases
+5. What is RDBMS?
+6. Difference between DBMS and RDBMS
+7. What is SQL?
+8. Why do we use SQL?
+9. What are databases, schemas, and tables?
+10. Data types in SQL with examples
+11. SQL Commands and it’s types
+What is Data?
+Data refers to any information or set of information that can be
+collected, stored, and processed. It can take many forms such as text,
+numbers, images, videos, or sound. Data is crucial for making
+informed decisions and analyzing patterns and trends.
+Different Data Storage Devices
+There are several types of data storage devices available today.
+Some of the most common ones include hard disk drives (HDDs),
+solid-state drives (SSDs), USB flash drives, and memory cards. These
+devices vary in their storage capacity, speed, and portability.
+Where does the DBMS and RDBMS Data get stored?
+Data in a DBMS (Database Management System) is stored in a
+centralized database, which can be accessed by multiple users
+simultaneously. An RDBMS (Relational Database Management
+System) stores data in tables that are related to one another by a
+common key. The data in an RDBMS is also stored in a centralized
+database.
+Traditional Databases
+A traditional database is a structured collection of data that is
+organized in a specific way to make it easier to search and retrieve.
+These databases are typically designed for a specific purpose, such as
+managing inventory, tracking customer orders, or processing
+financial transactions.
+What is RDBMS?
+An RDBMS is a type of database that stores data in tables that are
+related to one another. It uses a relational model to represent data
+in a structured manner, which makes it easier to organize, manage,
+and retrieve data. RDBMS is the most widely used type of database
+management system and is used by many businesses and
+organizations worldwide.
+Difference between DBMS and RDBMS
+The main difference between a DBMS and RDBMS is the way they
+store and manage data. A DBMS stores data in a non-relational
+manner, while an RDBMS stores data in a relational manner. This
+means that an RDBMS is more structured and organized, making it
+easier to manage and retrieve data. Additionally, RDBMSs are more
+secure and scalable than DBMSs.
+Examples
+Some examples of DBMSs include Microsoft Access and FileMaker
+Pro, while some examples of RDBMSs include Oracle, MySQL, and
+Microsoft SQL Server. These systems are widely used in different
+industries and applications such as healthcare, finance, education,
+and e-commerce.
+What is SQL?
+SQL stands for Structured Query Language. It's a programming
+language used to manage and manipulate relational databases. SQL
+is used to create, read, update, and delete data from a database, as
+well as perform other functions like creating and modifying tables
+and managing access to the database.
+Why do we use SQL?
+SQL is a standard language for managing and manipulating data in
+relational databases. Some of the key reasons why we use SQL
+include:
+It's a powerful language for managing large amounts of data.
+It allows us to quickly and easily retrieve data from a database.
+It provides a standard way of working with databases, making it easy
+to move data between different systems.
+It's widely used in the industry, so knowledge of SQL is highly valued
+by employers.
+How to use SQL
+SQL is used through a variety of tools, including command-line
+interfaces, graphical user interfaces, and programming libraries. The
+basic syntax of SQL is relatively simple and easy to learn, but more
+advanced usage can require significant expertise.
+What are databases, schemas, and tables?
+A database is a collection of data that's organized and stored in a
+way that allows for efficient retrieval and manipulation. Databases
+can contain multiple schemas, which are logical containers for tables
+and other database objects. Tables are the fundamental building
+blocks of a database, and they store data in rows and columns.
+Data types in SQL with examples
+SQL supports a wide range of data types, including:
+Numeric data types, such as INTEGER and DECIMAL
+Character and string data types, such as CHAR and VARCHAR
+Date and time data types, such as DATE and TIME
+Boolean data types, such as BOOLEAN
+Here are some examples of SQL data types:
+INTEGER: a whole number, such as 1, 2, 3, etc.
+DECIMAL: a number with decimal places, such as 3.14159
+CHAR: a fixed-length string of characters, such as 'hello'
+VARCHAR: a variable-length string of characters, such as 'world'
+DATE: a date, such as '2023-03-21'
+TIME: a time of day, such as '09:30:00'
+BOOLEAN: a true or false value, such as TRUE or FALSE.
+I hope this information helps you understand the basics of SQL!
+SQL Commands and it’s types :
+There are several types of SQL commands that are used to perform
+different operations on a relational database. Here are some of the
+most common types of SQL commands:
+Data Definition Language (DDL) Commands:
+CREATE: This command creates a new table in your database. For
+example:
+ALTER: This command modifies the structure of an existing table in
+your database. For example:
+DROP: This command deletes an existing table in your database. For
+example:
+CREATE TABLE customers (
+ id INT PRIMARY KEY,
+ name VARCHAR(50),
+ email VARCHAR(100)
+);
+ALTER TABLE customers
+ADD COLUMN address VARCHAR(200);
+DROP TABLE customers;
+Data Manipulation Language (DML) Commands:
+INSERT: This command adds new data to a table in your database.
+For example:
+UPDATE: This command modifies existing data in a table in your
+database. For example:
+DELETE: This command removes data from a table in your database.
+For example:
+Data Query Language (DQL) Commands:
+SELECT: This command retrieves data from one or more tables in
+your database. For example:
+INSERT INTO customers (id, name, email)
+VALUES (1, 'John Smith', 'john.smith@example.com');
+UPDATE customers
+SET email = 'jsmith@example.com'
+WHERE name = 'John Smith';
+DELETE FROM customers
+WHERE id = 1;
+SELECT name, email
+FROM customers
+WHERE email LIKE '%example.com';
+Transaction Control Language (TCL) Commands:
+COMMIT: This command saves all the changes you have made to
+your database since the last COMMIT or ROLLBACK. For example:
+ROLLBACK: This command undoes all the changes you have made to
+your database since the last COMMIT or ROLLBACK. For example:
+SAVEPOINT: This command creates a savepoint within a transaction,
+allowing you to roll back to that point if needed. For example:
+Data Control Language (DCL) Commands:
+GRANT: This command gives a user or role permission to access
+specific objects in your database. For example:
+REVOKE: This command removes a user or role's permission to
+access specific objects in your database. For example:
+COMMIT;
+ROLLBACK;
+GRANT SELECT, INSERT ON customers TO my_user
+REVOKE SELECT, INSERT ON customers TO my_user
+SAVEPOINT my_savepoint;
